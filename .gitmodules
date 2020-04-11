@@ -1,0 +1,3 @@
+[submodule "nvdla-base/nvdla-driver/sw"]
+	path = nvdla-base/nvdla-driver/sw
+	url = git@github.com:abejgonzalez/sw.git
