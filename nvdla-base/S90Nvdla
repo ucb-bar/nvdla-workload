@@ -13,7 +13,7 @@ case "$1" in
     fi
     ;;
   stop)
-    echo -n "There is nothing to stop for nvdla\n"
+    echo "There is nothing to stop for the NVDLA driver"
     ;;
   restart|reload)
     "$0" stop
