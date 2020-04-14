@@ -5,11 +5,15 @@
 
 case "$1" in
   start)
-    echo "Setting up nvdla"
-    insmod /usr/share/opendla.ko
+    echo "Setting up NVDLA driver"
+    if insmod /usr/share/opendla.ko ; then
+        echo "NVDLA driver installed"
+    else
+        echo "NVDLA driver failed installation"
+    fi
     ;;
   stop)
-    echo -n "There is nothing to stop for nvdla"
+    echo -n "There is nothing to stop for nvdla\n"
     ;;
   restart|reload)
     "$0" stop

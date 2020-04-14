@@ -1,0 +1,6 @@
+{
+  "name" : "nvdla-driver-base",
+  "workdir" : "nvdla-base",
+  "base" : "br-base.json",
+  "linux-config" : "nvdla-kfrag"
+}

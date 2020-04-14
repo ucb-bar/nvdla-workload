@@ -1,8 +1,9 @@
 {
   "name" : "nvdla-base",
-  "base" : "br-base.json",
+  "base" : "nvdla-driver-base.json",
   "host-init" : "host-init.sh",
   "linux-config" : "nvdla-kfrag",
   "files" : [["nvdla-driver/opendla.ko", "/usr/share/opendla.ko"],
-             ["S90Nvdla", "/etc/init.d/"]]
+             ["S90Nvdla", "/etc/init.d/"]],
+  "mem" : "4GiB"
 }
