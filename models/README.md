@@ -9,11 +9,11 @@ To compile ResNet-50:
 ```
 $ ./nvdla_compiler \
     --prototxt $NVDLA_WORKLOAD/models/deep-residual-networks/prototxt/ResNet-50-deploy.prototxt \
-    --caffemodel <path/to/downloaded/caffemodel>
+    --caffemodel <path/to/downloaded/caffemodel> \
+    --configtarget <nv_large|nv_small>
 ```
 To run (example for nv\_small config):
 ```
 $ ./nvdla_runtime --loadable $NVDLA_WORKLOAD/models/resnet50_small.protobuf \
     --image $NVDLA_WORKLOAD/models/dog.jpg
 ```
-

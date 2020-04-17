@@ -1,8 +1,4 @@
-NVDLA FireMarshal Workload
-==========================
-
-This repo. uses FireMarshal to build a Linux image/binary with the NVDLA driver.
-
+NVDLA FireMarshal Workload ========================== This repo. uses FireMarshal to build a Linux image/binary with the NVDLA driver.  
 # Updating the Linux kernel to support NVDLA
 
 You must have the ``CONFIG_DRM_GEM_CMA_HELPER`` string in your kernel ``.config`` file to build the driver.
@@ -22,4 +18,3 @@ This requires you to first build the kernel using ``nvdla-driver-base.json`` the
 
 You will have to repeat these steps if you delete the ``nvdla-base`` AND build a new kernel with a different ``.config``.
 Otherwise, you can just run Step 2 (since the base kernel will have been unmodified).
-
