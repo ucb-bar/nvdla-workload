@@ -34,7 +34,7 @@ To compile ResNet-50:
 ```
 $ ./nvdla_compiler \
     --prototxt $NVDLA_WORKLOAD/models/deep-residual-networks/prototxt/ResNet-50-deploy.prototxt \
-    --caffemodel $NVDLA_WORKLOAD/models/ResNet-50-model.caffemodel
+    --caffemodel <path/to/downloaded/caffemodel>
 ```
 To run:
 ```
