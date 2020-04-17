@@ -23,21 +23,3 @@ This requires you to first build the kernel using ``nvdla-driver-base.json`` the
 You will have to repeat these steps if you delete the ``nvdla-base`` AND build a new kernel with a different ``.config``.
 Otherwise, you can just run Step 2 (since the base kernel will have been unmodified).
 
-# Running models
-
-[Source for ResNet-50 caffemodel](https://onedrive.live.com/?authkey=%21AAFW2-FVoxeVRck&id=4006CBB8476FF777%2117887&cid=4006CBB8476FF777)
-
-First, check out submodules: `git submodule update --init --recursive`
-
-Theoretically, the following should work if the prebuilt executables function correctly.
-To compile ResNet-50:
-```
-$ ./nvdla_compiler \
-    --prototxt $NVDLA_WORKLOAD/models/deep-residual-networks/prototxt/ResNet-50-deploy.prototxt \
-    --caffemodel <path/to/downloaded/caffemodel>
-```
-To run:
-```
-$ ./nvdla_runtime --loadable $NVDLA_WORKLOAD/models/resnet50_small.protobuf \
-    --image $NVDLA_WORKLOAD/models/dog.jpg
-```
