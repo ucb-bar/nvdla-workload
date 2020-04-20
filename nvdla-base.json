@@ -1,6 +1,7 @@
 {
   "name" : "nvdla-base",
   "base" : "br-base.json",
+  "host-init" : "build-umd.sh",
   "post-bin" : "build-ext-modules.sh",
   "linux-config" : "nvdla-kfrag",
   "files" : [["nvdla-driver/opendla.ko", "/usr/share/opendla.ko"],
