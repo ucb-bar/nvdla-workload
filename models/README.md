@@ -11,8 +11,8 @@ $ ./nvdla_compiler \
     --prototxt $NVDLA_WORKLOAD/models/deep-residual-networks/prototxt/ResNet-50-deploy.prototxt \
     --caffemodel <path/to/downloaded/caffemodel> \
     --configtarget <opendla-large|opendla-small> \
-    --cprecision int8
-    --calibtable $NVDLA_WORKLOAD/nvdla-base/nvdla-sw/umd/utils/calibdata/resnet50.json
+    --cprecision int8 \
+    --calibtable $NVDLA_WORKLOAD/nvdla-base/nvdla-sw/umd/utils/calibdata/resnet50.json \
     --informat nchw
 ```
 - run a loadable (example ResNet-50 for nv\_small config):
