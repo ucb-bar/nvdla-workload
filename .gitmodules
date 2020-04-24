@@ -1,6 +1,6 @@
-[submodule "nvdla-base/nvdla-driver/sw"]
-	path = nvdla-base/nvdla-driver/sw
-	url = git@github.com:abejgonzalez/sw.git
 [submodule "models/imagenet/deep-residual-networks"]
 	path = models/imagenet/deep-residual-networks
 	url = https://github.com/KaimingHe/deep-residual-networks.git
+[submodule "nvdla-base/nvdla-sw"]
+	path = nvdla-base/nvdla-sw
+	url = git@github.com:abejgonzalez/sw.git

@@ -4,7 +4,7 @@
 # $1 - the loadable
 # $2 - the image
 
-set -ex
+set -x
 
 NVDLA_DIR=/root
 

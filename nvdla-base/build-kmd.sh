@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -ex
+
+make LINUXSRC=$FIREMARSHAL_LINUX_SRC clean
+make LINUXSRC=$FIREMARSHAL_LINUX_SRC

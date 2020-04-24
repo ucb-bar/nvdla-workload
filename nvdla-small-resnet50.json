@@ -1,0 +1,11 @@
+{
+  "name" : "nvdla-small-resnet50",
+  "base" : "nvdla-base.json",
+  "workdir" : "nvdla-base",
+  "run" : "./run-nvdla.sh resnet50_small.nvdla dog.jpg",
+  "files" : [
+    ["../models/imagenet/resnet50_small.nvdla", "/root/"],
+    ["../models/imagenet/dog.jpg", "/root/"]
+  ],
+  "mem" : "4GiB"
+}

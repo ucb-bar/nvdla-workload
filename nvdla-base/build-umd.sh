@@ -2,7 +2,7 @@
 
 set -ex
 
-UMD_TOP=$PWD/nvdla-driver/sw/umd
+UMD_TOP=$PWD/nvdla-sw/umd
 
 export TOP=$UMD_TOP
 
