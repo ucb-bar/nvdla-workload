@@ -2,10 +2,11 @@
   "name" : "nvdla-large-resnet50",
   "base" : "nvdla-base.json",
   "workdir" : "nvdla-base",
-  "run" : "./run-nvdla.sh resnet50_large_int8.nvdla dog.jpg",
+  "run" : "./run-nvdla.sh resnet50_large.nvdla dog.jpg",
   "files" : [
-    ["../models/imagenet/resnet50_large_int8.nvdla", "/root/"],
-    ["../models/imagenet/dog.jpg", "/root/"]
+    ["../models/imagenet/resnet50_large.nvdla", "/root/"],
+    ["../models/imagenet/dog.jpg", "/root/"],
+    ["../models/imagenet/boat.jpg", "/root/"]
   ],
   "mem" : "4GiB"
 }

@@ -1,22 +1,27 @@
 # Running models
 
-[Source for ResNet-50 caffemodel](https://onedrive.live.com/?authkey=%21AAFW2-FVoxeVRck&id=4006CBB8476FF777%2117887&cid=4006CBB8476FF777)
+This folder contains the information needed to build various loadbles as well as pre-built NVDLA loadables.
 
-First, check out submodules: `git submodule update --init --recursive`
+## ResNet-50
 
-Once the executables are compiled, do the following to:
-- compile ResNet-50:
+**By default, we include both ``resnet50_<large/small>`` loadables under ``imagenet`` as well as two sample images.**
+
+First, check out submodules if they are not already checked out
+
 ```
-$ ./nvdla_compiler \
-    --prototxt $NVDLA_WORKLOAD/models/deep-residual-networks/prototxt/ResNet-50-deploy.prototxt \
-    --caffemodel <path/to/downloaded/caffemodel> \
-    --configtarget <opendla-large|opendla-small> \
-    --cprecision int8 \
-    --calibtable $NVDLA_WORKLOAD/nvdla-base/nvdla-sw/umd/utils/calibdata/resnet50.json \
-    --informat nchw
+$ git submodule update --init --recursive
 ```
-- run a loadable (example ResNet-50 for nv\_small config):
+
+Then get the ResNet-50 Caffe model source file found [here](https://onedrive.live.com/?authkey=%21AAFW2-FVoxeVRck&id=4006CBB8476FF777%2117887&cid=4006CBB8476FF777).
+Move it into ``models`` directory.
+
+Next, run the compile script to generate a NVDLA loadable.
+
 ```
-$ ./nvdla_runtime --loadable $NVDLA_WORKLOAD/models/resnet50_small_int8.nvdla \
-    --image $NVDLA_WORKLOAD/models/dog.jpg
+./run_nvdla_compile.sh
 ```
+
+Note: By default, this compile script targets the ``nv_small`` configuration with ``int8`` precision.
+Feel free to modify it to target ``nv_large``, use ``fp16/32``, or more.
+
+

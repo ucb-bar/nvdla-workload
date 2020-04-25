@@ -3,4 +3,4 @@
 	url = https://github.com/KaimingHe/deep-residual-networks.git
 [submodule "nvdla-base/nvdla-sw"]
 	path = nvdla-base/nvdla-sw
-	url = git@github.com:abejgonzalez/sw.git
+	url = git@github.com:ucb-bar/nvdla-sw.git
