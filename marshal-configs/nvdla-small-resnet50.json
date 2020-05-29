@@ -2,7 +2,8 @@
   "name" : "nvdla-small-resnet50",
   "base" : "nvdla-base.json",
   "workdir" : "../nvdla-base",
-  "run" : "./run-nvdla.sh resnet50_small.nvdla dog.jpg",
+  "run" : "./run-nvdla.sh resnet50_small.nvdla dog.jpg boat.jpg",
+  "outputs" : ["/root/dog.jpg.dimg", "/root/boat.jpg.dimg"],
   "files" : [
     ["../models/imagenet/resnet50_small.nvdla", "/root/"],
     ["../models/imagenet/dog.jpg", "/root/"],
