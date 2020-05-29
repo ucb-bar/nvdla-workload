@@ -1,6 +1,7 @@
 {
   "name" : "nvdla-base",
   "base" : "br-base.json",
+  "workdir" : "../nvdla-base",
   "host-init" : "build-umd.sh",
   "post-bin" : "build-kmd.sh",
   "linux-config" : "nvdla-kfrag",

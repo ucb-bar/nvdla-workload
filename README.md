@@ -18,5 +18,5 @@ Until this is updated in the NVDLA driver code (when it is eventually bumped to 
 
 # To build the test workloads
 
- 1. Build the Linux kernel, UMD, KMD, and images: ``./marshal -v build $NVDLA_WORKLOAD/<workload>.json``.
+ 1. Build the Linux kernel, UMD, KMD, and images: ``./marshal -v build $NVDLA_WORKLOAD/marshal-configs/<workload>.json``.
  2. Then you can continue with the rest of the FireMarshal commands.
